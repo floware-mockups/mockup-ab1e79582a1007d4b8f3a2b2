@@ -1,0 +1,483 @@
+{
+  "title": "Pianificazione dei turni di servizio",
+  "description": "Prototipo navigabile per organizzare i turni settimanali della polizia locale, verificare la copertura per fascia e zona e conteggiare le ore assegnate a ogni agente.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "panoramica",
+      "title": "Panoramica settimanale",
+      "description": "Riepilogo della copertura dei servizi e delle ore pianificate per la settimana corrente. I filtri per settimana, fascia e zona sono separati dal modulo di assegnazione.",
+      "metrics": [
+        {
+          "label": "Turni assegnati",
+          "value": "42"
+        },
+        {
+          "label": "Fasce coperte",
+          "value": "18/21"
+        },
+        {
+          "label": "Ore pianificate",
+          "value": "312"
+        },
+        {
+          "label": "Agenti in servizio",
+          "value": "14"
+        }
+      ],
+      "columns": [
+        "Agente",
+        "Giorno",
+        "Turno",
+        "Zona",
+        "Ore",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Lumo Riva",
+          "Lunedì",
+          "Mattino",
+          "Centro",
+          "6",
+          "Assegnato"
+        ],
+        [
+          "Vela Neri",
+          "Lunedì",
+          "Pomeriggio",
+          "Portici",
+          "6",
+          "Assegnato"
+        ],
+        [
+          "Nubi Serra",
+          "Lunedì",
+          "Serale",
+          "Giardini",
+          "4",
+          "Assegnato"
+        ],
+        [
+          "Timo Brina",
+          "Martedì",
+          "Mattino",
+          "Darsena",
+          "6",
+          "Assegnato"
+        ],
+        [
+          "Mira Salvia",
+          "Martedì",
+          "Pomeriggio",
+          "Centro",
+          "6",
+          "Assegnato"
+        ],
+        [
+          "Orio Lenza",
+          "Martedì",
+          "Serale",
+          "Portici",
+          "4",
+          "Da coprire"
+        ],
+        [
+          "Rina Quarzo",
+          "Mercoledì",
+          "Mattino",
+          "Giardini",
+          "6",
+          "Assegnato"
+        ],
+        [
+          "Sile Vento",
+          "Mercoledì",
+          "Pomeriggio",
+          "Darsena",
+          "6",
+          "Assegnato"
+        ],
+        [
+          "Duna Felce",
+          "Mercoledì",
+          "Serale",
+          "Centro",
+          "4",
+          "Assegnato"
+        ],
+        [
+          "Lumo Riva",
+          "Giovedì",
+          "Mattino",
+          "Portici",
+          "6",
+          "Assegnato"
+        ],
+        [
+          "Vela Neri",
+          "Giovedì",
+          "Pomeriggio",
+          "Giardini",
+          "6",
+          "Assegnato"
+        ],
+        [
+          "Nubi Serra",
+          "Giovedì",
+          "Serale",
+          "Darsena",
+          "4",
+          "Da coprire"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "turni-settimanali",
+      "title": "Turni settimanali",
+      "description": "Tabella filtrabile delle assegnazioni con selezione per agente, giorno, fascia e zona. Il modulo consente di aggiungere un turno indicando agente, giorno, fascia, zona e durata.",
+      "metrics": [
+        {
+          "label": "Mattino",
+          "value": "15"
+        },
+        {
+          "label": "Pomeriggio",
+          "value": "15"
+        },
+        {
+          "label": "Servizi serali",
+          "value": "12"
+        }
+      ],
+      "columns": [
+        "Agente",
+        "Giorno",
+        "Turno",
+        "Zona",
+        "Ore",
+        "Note"
+      ],
+      "rows": [
+        [
+          "Lumo Riva",
+          "Lunedì",
+          "Mattino",
+          "Centro",
+          "6",
+          "Pattuglia a piedi"
+        ],
+        [
+          "Vela Neri",
+          "Lunedì",
+          "Pomeriggio",
+          "Portici",
+          "6",
+          "Controllo viabilità"
+        ],
+        [
+          "Nubi Serra",
+          "Lunedì",
+          "Serale",
+          "Giardini",
+          "4",
+          "Presidio serale"
+        ],
+        [
+          "Timo Brina",
+          "Martedì",
+          "Mattino",
+          "Darsena",
+          "6",
+          "Pattuglia di zona"
+        ],
+        [
+          "Mira Salvia",
+          "Martedì",
+          "Pomeriggio",
+          "Centro",
+          "6",
+          "Controllo viabilità"
+        ],
+        [
+          "Orio Lenza",
+          "Martedì",
+          "Serale",
+          "Portici",
+          "4",
+          "Da assegnare"
+        ],
+        [
+          "Rina Quarzo",
+          "Mercoledì",
+          "Mattino",
+          "Giardini",
+          "6",
+          "Pattuglia a piedi"
+        ],
+        [
+          "Sile Vento",
+          "Mercoledì",
+          "Pomeriggio",
+          "Darsena",
+          "6",
+          "Presidio viabilità"
+        ],
+        [
+          "Duna Felce",
+          "Mercoledì",
+          "Serale",
+          "Centro",
+          "4",
+          "Presidio serale"
+        ],
+        [
+          "Lumo Riva",
+          "Giovedì",
+          "Mattino",
+          "Portici",
+          "6",
+          "Pattuglia di zona"
+        ],
+        [
+          "Vela Neri",
+          "Giovedì",
+          "Pomeriggio",
+          "Giardini",
+          "6",
+          "Controllo viabilità"
+        ],
+        [
+          "Nubi Serra",
+          "Giovedì",
+          "Serale",
+          "Darsena",
+          "4",
+          "Da assegnare"
+        ],
+        [
+          "Timo Brina",
+          "Venerdì",
+          "Mattino",
+          "Centro",
+          "6",
+          "Pattuglia a piedi"
+        ],
+        [
+          "Mira Salvia",
+          "Venerdì",
+          "Pomeriggio",
+          "Portici",
+          "6",
+          "Presidio viabilità"
+        ],
+        [
+          "Orio Lenza",
+          "Venerdì",
+          "Serale",
+          "Giardini",
+          "4",
+          "Presidio serale"
+        ],
+        [
+          "Rina Quarzo",
+          "Sabato",
+          "Mattino",
+          "Darsena",
+          "6",
+          "Pattuglia di zona"
+        ],
+        [
+          "Sile Vento",
+          "Sabato",
+          "Pomeriggio",
+          "Centro",
+          "6",
+          "Controllo viabilità"
+        ],
+        [
+          "Duna Felce",
+          "Sabato",
+          "Serale",
+          "Portici",
+          "4",
+          "Presidio serale"
+        ],
+        [
+          "Lumo Riva",
+          "Domenica",
+          "Mattino",
+          "Giardini",
+          "6",
+          "Pattuglia a piedi"
+        ],
+        [
+          "Vela Neri",
+          "Domenica",
+          "Pomeriggio",
+          "Darsena",
+          "6",
+          "Presidio viabilità"
+        ],
+        [
+          "Nubi Serra",
+          "Domenica",
+          "Serale",
+          "Centro",
+          "4",
+          "Presidio serale"
+        ]
+      ],
+      "form": [
+        "Agente",
+        "Giorno",
+        "Turno",
+        "Zona",
+        "Ore"
+      ]
+    },
+    {
+      "id": "ore-per-agente",
+      "title": "Ore per agente",
+      "description": "Riepilogo filtrabile delle ore assegnate nella settimana, con conteggio dei turni per fascia e controllo del carico pianificato.",
+      "metrics": [
+        {
+          "label": "Ore complessive",
+          "value": "312"
+        },
+        {
+          "label": "Media per agente",
+          "value": "22,3"
+        },
+        {
+          "label": "Agenti oltre 24 ore",
+          "value": "5"
+        }
+      ],
+      "columns": [
+        "Agente",
+        "Turni mattino",
+        "Turni pomeriggio",
+        "Turni serali",
+        "Ore totali",
+        "Carico"
+      ],
+      "rows": [
+        [
+          "Lumo Riva",
+          "2",
+          "1",
+          "1",
+          "22",
+          "Regolare"
+        ],
+        [
+          "Vela Neri",
+          "1",
+          "2",
+          "1",
+          "22",
+          "Regolare"
+        ],
+        [
+          "Nubi Serra",
+          "1",
+          "1",
+          "2",
+          "20",
+          "Regolare"
+        ],
+        [
+          "Timo Brina",
+          "2",
+          "1",
+          "1",
+          "22",
+          "Regolare"
+        ],
+        [
+          "Mira Salvia",
+          "1",
+          "2",
+          "1",
+          "22",
+          "Regolare"
+        ],
+        [
+          "Orio Lenza",
+          "1",
+          "1",
+          "2",
+          "20",
+          "Regolare"
+        ],
+        [
+          "Rina Quarzo",
+          "2",
+          "1",
+          "1",
+          "22",
+          "Regolare"
+        ],
+        [
+          "Sile Vento",
+          "1",
+          "2",
+          "1",
+          "22",
+          "Regolare"
+        ],
+        [
+          "Duna Felce",
+          "1",
+          "1",
+          "2",
+          "20",
+          "Regolare"
+        ],
+        [
+          "Tesa Glicine",
+          "2",
+          "2",
+          "1",
+          "28",
+          "Da verificare"
+        ],
+        [
+          "Pilo Ambra",
+          "2",
+          "1",
+          "1",
+          "22",
+          "Regolare"
+        ],
+        [
+          "Nera Loto",
+          "1",
+          "2",
+          "1",
+          "22",
+          "Regolare"
+        ],
+        [
+          "Filo Cedro",
+          "1",
+          "1",
+          "2",
+          "20",
+          "Regolare"
+        ],
+        [
+          "Alda Menta",
+          "2",
+          "2",
+          "1",
+          "28",
+          "Da verificare"
+        ]
+      ],
+      "form": []
+    }
+  ]
+}
